@@ -20,6 +20,10 @@
   transition: 1s ease;
   background-color: $color-theme-dark;
   & > .header {
+    & > .header__navs{
+      background-color: $dark-color;
+      color: $dark-text;
+    }
     background-color: $dark-color;
     color: $dark-text;
     & > .header__logo {

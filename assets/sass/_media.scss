@@ -40,9 +40,11 @@
         font-size: 2rem;
         margin: 3rem 0;
       }
-      & > li:last-of-type {
-        display: none;
-      }
+    }
+    &__theme{
+      display: block;
+      text-align: center;
+      background: transparent;
     }
   }
 

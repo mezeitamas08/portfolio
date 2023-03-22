@@ -837,6 +837,9 @@ html {
   .dark > .header {
     background-color: #2c3333;
     color: #a5c9ca; }
+    .dark > .header > .header__navs {
+      background-color: #2c3333;
+      color: #a5c9ca; }
     .dark > .header > .header__logo::selection {
       color: #a5c9ca; }
     .dark > .header > .header__logo > span {
@@ -976,8 +979,10 @@ footer.dark {
         display: block;
         font-size: 2rem;
         margin: 3rem 0; }
-      .header > .header__navs > li:last-of-type {
-        display: none; }
+    .header__theme {
+      display: block;
+      text-align: center;
+      background: transparent; }
   .home {
     flex-direction: column; }
     .home__left {
