@@ -92,13 +92,21 @@
 }
 
 @media(min-width: $media-phone-min) and (max-width: $media-phone-max){
+  #skill{
+    width: 240px;
+  }
   .heading{
     margin-top: 4rem;
     margin-bottom: 3rem;
   }
   .home{
-    &__right{
-      margin: 2rem 50% 0 20%;
+    &__left{
+      width: 100%;
+    }
+    &__right{ 
+      display: flex;
+      justify-content: center;
+      margin-top: 2rem;
     }
   }
   .about{
@@ -110,7 +118,9 @@
     }
   }
   .projects__container{
+    grid-template-rows: 200px !important;
     grid-template-columns: repeat(1,1fr) !important;
+    grid-auto-rows: 200px !important;
   }
 }
 
@@ -125,7 +135,7 @@
       width: 100%;
     }
     &__right{
-      width: 100%;
+      width: 200px;
     }
     &__image{
       margin-top: 2rem;
@@ -151,5 +161,38 @@
   .projects__container{
     grid-template-rows: 0 !important;
     grid-auto-rows: 200px;
+  }
+}
+
+@media(min-width: 100px) and (max-width: $media-phone-min){
+  .home__left{
+    & > h3{
+      font-size: 3rem;
+    }
+    & > h2,span{
+      font-size: 2rem;
+    }
+    &>p{
+      font-size: 1.6rem;
+    }
+  }
+  .heading{
+    margin-top: 2rem;
+  }
+  .home__image{
+    width: 200px !important;
+  }
+  .about{
+    flex-direction: column;
+    &__left,&__right{
+      width: 100%;
+    }
+  }
+  .projects__container{
+    grid-template-columns: repeat(1, 1fr) !important;
+    grid-template-rows: 150px !important;
+  }
+  #skill{
+    width: 150px;
   }
 }
