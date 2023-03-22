@@ -1,0 +1,122 @@
+#header__menu-icon {
+  font-size: 3.6rem;
+  color: $white-second-color;
+  display: none;
+}
+
+.header {
+  &.fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    transition: 0.5s ease;
+  }
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  transition: 0.5s ease;
+  width: 100%;
+  padding: 10px 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: $white-main-color;
+
+  &a {
+    display: inline-flex;
+    flex-direction: column;
+  }
+
+  &__logo {
+    display: flex;
+    cursor: pointer;
+    flex-direction: column;
+    color: $white-second-color;
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-decoration: none;
+    animation-name: bounceInLeft;
+    animation-duration: 2s;
+    &::selection {
+      color: $white-text;
+      background: $white;
+    }
+
+    & span {
+      // color: #2196f3;
+      color: $white-text;
+      &::selection {
+        color: $white-bg-section;
+        background: transparent;
+      }
+    }
+  }
+
+  &__navs {
+    font-size: 1.7rem;
+    display: flex;
+    gap: 40px;
+    animation-name: bounceInRight;
+    animation-duration: 2s;
+
+    & li {
+      list-style: none;
+      &:last-of-type {
+        top: 4px;
+        position: relative;
+      }
+
+      & > a.active {
+        color: $white-text;
+      }
+
+      // &.active:after {
+      //   content: "";
+      //   position: relative;
+      //   left: 10px;top:26px;
+      //   border-width: 0 10px 10px;
+      //   border-style: solid;
+      //   border-color: #f3961c transparent;
+      //   display: block;
+      //   width: 0;
+      // }
+      & a {
+        color: $white-color;
+        display: inline-flex;
+        justify-content: center;
+        text-align: center;
+        font-size: 1.5rem;
+
+        &:hover,
+        &:active {
+          color: $white-text;
+        }
+        &::selection {
+          color: $white-text;
+          background: $white;
+        }
+      }
+
+      & i {
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+  }
+
+  &__theme {
+    color: $white-color;
+    display: flex;
+    font-size: 1.5rem;
+    cursor: pointer;
+
+    &.light {
+      & > .bx-sun {
+        display: none;
+      }
+    }
+  }
+}

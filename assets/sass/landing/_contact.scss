@@ -1,0 +1,14 @@
+.contact {
+  &__heading{
+    &::selection{
+      background: $white-bg-section;
+      color: $white-text;
+    }
+    &>span{
+      &::selection{
+        background: $white-bg-section;
+        color: black;
+      }
+    }
+  }
+}

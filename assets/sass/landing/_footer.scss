@@ -1,0 +1,27 @@
+.footer {
+  transition: 0.5s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 2rem 9%;
+  background: $white-main-color;
+  color: $white-second-color;
+  font-size: 1.5rem;
+
+  &-text {
+    &>p::selection{
+      background: $white-bg-section;
+      color: black;
+    }
+    & span {
+      color: $white-text;
+      font-weight: 700;
+      &::selection{
+        background: $white-bg-section;
+        color: $white-text;
+      }
+    }
+  }
+  
+}

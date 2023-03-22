@@ -1,0 +1,37 @@
+.form {
+  max-width: 70rem;
+  margin: 1rem auto;
+  text-align: center;
+  margin-bottom: 3rem;
+
+  & input,
+  textarea {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 1.5rem;
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: $white-second-color;
+    background: $white-main-color;
+    border-radius: 0.8rem;
+    margin: 0.7rem 0;
+    
+    &::selection{
+      color: $white-text;
+      background: $white;
+    }
+  }
+
+  & input[type="submit"] {
+    cursor: pointer;
+    justify-content: center;
+
+    &:hover,
+    :active {
+      font-size: 1.8rem;
+      color: $white-text;
+    }
+  }
+}

@@ -1,0 +1,234 @@
+.about {
+  position: relative;
+  display: flex;
+  width: 100%;
+  z-index: 10;
+  flex-direction: row;
+
+  &__left {
+    display: inline-flex;
+    position: relative;
+    flex-direction: column;
+    width: 50%;
+    &>p{
+      font-size: 1.5rem;
+      &::selection{
+        color: $white-text;
+        background: $white;
+      }
+    }
+  }
+
+  &__right {
+    display: inline-flex;
+    flex-direction: column;
+    width: 50%;
+    &-text {
+      text-align: center;
+      font-weight: 600;
+      font-size: 2rem;
+    }
+  }
+  &__heading {&-span{
+    color: $white-text;
+    font-size: 2rem;
+    font-weight: 600;
+    padding-bottom: 1.5rem;
+  }
+    &>span::selection{
+      background: $white-bg-section;
+      color: black;
+      
+    }
+    &::selection {
+      color: $white-text;
+      background: $white-bg-section;
+    }
+  }
+}
+
+#skill {
+  width: 296px;
+  margin: 50px auto 0;
+  position: relative;
+  line-height: 2em;
+  padding: 30px 0;
+  transition: 0.5s;
+}
+
+.skillbar {
+  margin-bottom: 50px;
+  background: #e9e5e2;
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(#e1ddd9),
+    to(#e9e5e2)
+  );
+  background-image: -webkit-linear-gradient(top, #e1ddd9, #e9e5e2);
+  background-image: -moz-linear-gradient(top, #e1ddd9, #e9e5e2);
+  background-image: -ms-linear-gradient(top, #e1ddd9, #e9e5e2);
+  background-image: -o-linear-gradient(top, #e1ddd9, #e9e5e2);
+  background-image: linear-gradient(top, #e1ddd9, #e9e5e2);
+  height: 20px;
+  border-radius: 10px;
+  -moz-box-shadow: 0 1px 0px #bebbb9 inset, 0 1px 0 #fcfcfc;
+  -webkit-box-shadow: 0 1px 0px #bebbb9 inset, 0 1px 0 #fcfcfc;
+  box-shadow: 0 1px 0px #bebbb9 inset, 0 1px 0 #fcfcfc;
+}
+
+.skillbar h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  position: relative;
+  top: -55px;
+}
+
+.skill-box {
+  transition: 0.5s ease;
+  padding-top: 1%;
+  height: 3rem;
+  display: inline-flex !important;
+  width: 3rem;
+  position: relative;
+  bottom: 20%;
+  border-radius: 50%;
+  border: 0.2rem solid black;
+  font-size: 2rem;
+  justify-content: center;
+}
+
+.bar {
+  height: 18px;
+  margin: 1px 2px;
+  position: absolute;
+  border-radius: 10px;
+  -moz-box-shadow: 0 1px 0px #fcfcfc inset, 0 1px 0 #bebbb9;
+  -webkit-box-shadow: 0 1px 0px #fcfcfc inset, 0 1px 0 #bebbb9;
+  box-shadow: 0 1px 0px #fcfcfc inset, 0 1px 0 #bebbb9;
+}
+
+.bxl {
+  &-html5.active {
+    left: ($skills-html)-5%;
+    -moz-animation: html-logo 2s ease-out;
+    -webkit-animation: html-logo 2s ease-out;
+    color: $color-theme-day;
+    background: $color-html;
+  }
+  &-css3.active {
+    left: ($skills-css)-5%;
+    -moz-animation: css-logo 2s ease-out;
+    -webkit-animation: css-logo 2s ease-out;
+    color: $color-theme-day;
+    background: $color-css;
+  }
+  &-bootstrap.active {
+    left: ($skills-bootstrap)-5%;
+    -moz-animation: bootstrap-logo 2s ease-out;
+    -webkit-animation: bootstrap-logo 2s ease-out;
+    color: $color-theme-day;
+    background: $color-bootstrap;
+  }
+  &-sass.active {
+    left: ($skills-sass)-5%;
+    -moz-animation: sass-logo 2s ease-out;
+    -webkit-animation: sass-logo 2s ease-out;
+    background: $color-sass;
+    color: $color-theme-day;
+  }
+  &-javascript.active {
+    left: ($skills-javascript)-5%;
+    -moz-animation: javascript-logo 2s ease-out;
+    -webkit-animation: javascript-logo 2s ease-out;
+    background: $color-js;
+    color: $color-js-logo;
+  }
+  &-react.active {
+    left: ($skills-react)-5%;
+    -moz-animation: react-logo 2s ease-out;
+    -webkit-animation: react-logo 2s ease-out;
+    background: $color-react;
+    color: $color-theme-day;
+  }
+  &-nodejs.active {
+    left: ($skills-nodejs)-5%;
+    -moz-animation: nodejs-logo 2s ease-out;
+    -webkit-animation: nodejs-logo 2s ease-out;
+    background: $color-node;
+    color: $color-node-logo;
+  }
+  &-wordpress.active {
+    left: ($skills-wordpress)-5%;
+    -moz-animation: wordpress-logo 2s ease-out;
+    -webkit-animation: wordpress-logo 2s ease-out;
+    background: $color-wordpress;
+    color: $color-theme-day;
+  }
+}
+
+.html.active {
+  width: $skills-html;
+  -moz-animation: html 2s ease-out;
+  -webkit-animation: html 2s ease-out;
+  background-color: $color-html;
+  // background-image: -webkit-gradient(
+  //   linear,
+  //   left top,
+  //   left bottom,
+  //   from(#f0bb4b),
+  //   to(#d9aa44)
+  // );
+  // background-image: -webkit-linear-gradient(top, #f0bb4b, #d9aa44);
+  // background-image: -moz-linear-gradient(top, #f0bb4b, #d9aa44);
+  // background-image: -ms-linear-gradient(top, #f0bb4b, #d9aa44);
+  // background-image: -o-linear-gradient(top, #f0bb4b, #d9aa44);
+  // background-image: linear-gradient(top, #f0bb4b, #d9aa44);
+}
+
+.css {
+  &.active {
+    width: $skills-css;
+    -moz-animation: css 2s ease-out;
+    -webkit-animation: css 2s ease-out;
+    background-color: $color-css;
+  }
+}
+.bootstrap.active {
+  width: $skills-bootstrap;
+  -moz-animation: bootstrap 2s ease-out;
+  -webkit-animation: bootstrap 2s ease-out;
+  background-color: $color-bootstrap;
+}
+.sass.active {
+  width: $skills-sass;
+  -moz-animation: sass 2s ease-out;
+  -webkit-animation: sass 2s ease-out;
+  background-color: $color-sass;
+}
+.javascript.active {
+  width: $skills-javascript;
+  -moz-animation: javascript 2s ease-out;
+  -webkit-animation: javascript 2s ease-out;
+  background-color: $color-js;
+}
+.react.active {
+  width: $skills-react;
+  -moz-animation: react 2s ease-out;
+  -webkit-animation: react 2s ease-out;
+  background-color: $color-react;
+}
+.node.active {
+  width: $skills-nodejs;
+  -moz-animation: nodejs 2s ease-out;
+  -webkit-animation: nodejs 2s ease-out;
+  background-color: $color-node;
+}
+
+.wordpress.active {
+  width: $skills-wordpress;
+  -moz-animation: wordpress 2s ease-out;
+  -webkit-animation: wordpress 2s ease-out;
+  background-color: $color-wordpress;
+}

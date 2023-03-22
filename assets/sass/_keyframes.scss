@@ -1,0 +1,44 @@
+@-webkit-keyframes move {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-50px); }
+}
+@keyframes move {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-50px); }
+}
+
+
+@-moz-keyframes html        { 0%  { width:0px;} 100%{ width:$skills-html;}  }
+@-moz-keyframes html-logo        { 0%  {left:0px;} 100%{ left:($skills-html)-5%;}  }
+@-moz-keyframes css      { 0%  { width:0px;} 100%{ width:$skills-css;}  }
+@-moz-keyframes css-logo      { 0%  { left:0px;} 100%{ left:($skills-css)-5%;}  }
+@-moz-keyframes bootstrap      { 0%  { width:0px;} 100%{ width:$skills-bootstrap;}  }
+@-moz-keyframes bootstrap-logo      { 0%  {left:0px;} 100%{ left:($skills-bootstrap)-5%;}  }
+@-moz-keyframes sass      { 0%  { width:0px;} 100%{ width:$skills-sass;}  }
+@-moz-keyframes sass-logo      { 0%  { left:0px;} 100%{ left:($skills-sass)-5%;}  }
+@-moz-keyframes javascript      { 0%  { width:0px;} 100%{ width:$skills-javascript;}  }
+@-moz-keyframes javascript-logo      { 0%  { left:0px;} 100%{ left:($skills-javascript)-5%;}  }
+@-moz-keyframes react      { 0%  { width:0px;} 100%{ width:$skills-react;}  }
+@-moz-keyframes react-logo      { 0%  { left:0px;} 100%{ left:($skills-react)-5%;}  }
+@-moz-keyframes nodejs      { 0%  { width:0px;} 100%{ width:$skills-nodejs;}  }
+@-moz-keyframes nodejs-logo      { 0%  { left:0px;} 100%{ left:($skills-nodejs)-5%;}  }
+@-moz-keyframes wordpress   { 0%  { width:0px;} 100%{ width:$skills-wordpress;}  }
+@-moz-keyframes wordpress-logo   { 0%  { left:0px;} 100%{ left:($skills-wordpress)-5%;}  }
+
+@-webkit-keyframes html        { 0%  { width:0px;} 100%{ width:$skills-html;}  }
+@-webkit-keyframes html-logo        { 0%  { left:0px;} 100%{ left:($skills-html)-5%;}  }
+@-webkit-keyframes css      { 0%  { width:0px;} 100%{ width:$skills-css;}  }
+@-webkit-keyframes css-logo      { 0%  { left:0px;} 100%{ left:($skills-css)-5%;}  }
+@-webkit-keyframes bootstrap      { 0%  { width:0px;} 100%{ width:$skills-bootstrap;}  }
+@-webkit-keyframes bootstrap-logo      { 0%  { left:0px;} 100%{ left:($skills-bootstrap)-5%;}  }
+@-webkit-keyframes sass      { 0%  { width:0px;} 100%{ width:$skills-sass;}  }
+@-webkit-keyframes sass-logo      { 0%  { left:0px;} 100%{ left:($skills-sass)-5%;}  }
+@-webkit-keyframes javascript     { 0%  { width:0px;} 100%{ width:$skills-javascript;}  }
+@-webkit-keyframes javascript-logo     { 0%  { left:0px;} 100%{ left:($skills-javascript)-5%;}  }
+@-webkit-keyframes react     { 0%  { width:0px;} 100%{ width:$skills-react;}  }
+@-webkit-keyframes react-logo     { 0%  { left:0px;} 100%{ wleft:($skills-react)-5%;}  }
+@-webkit-keyframes nodejs      { 0%  { width:0px;} 100%{ width:$skills-nodejs;}  }
+@-webkit-keyframes nodejs-logo      { 0%  { left:0px;} 100%{ left:($skills-nodejs)-5%;}  }
+@-webkit-keyframes wordpress   { 0%  { width:0px;} 100%{ width:$skills-wordpress;}  }
+@-webkit-keyframes wordpress-logo   { 0%  { left:0px;} 100%{ left:($skills-wordpress)-5%;}  }
+

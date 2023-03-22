@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="hu">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://use.fontawesome.com/releases/v5.0.1/css/all.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <title>Mezei Tamás Portfolio | EN</title>
+    <meta name="robots" content="index, follow" />
+    <meta name="title" content="Meta Tags — Preview, Edit and Generate" />
+    <meta
+      name="description"
+      content="Tamás Mezei portfolio. Check out my page. 2023"
+    />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="#" />
+    <meta
+      property="og:title"
+      content="Tamás Mezei portfolio. Check out my page. 2023"
+    />
+    <meta
+      property="og:description"
+      content="Tamás Mezei portfolio. Check out my page. 2023"
+    />
+    <meta property="og:image" content="#" />
+
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="#" />
+    <meta
+      property="twitter:title"
+      content="Tamás Mezei portfolio. Check out my page. 2023"
+    />
+    <meta
+      property="twitter:description"
+      content="Tamás Mezei portfolio. Check out my page. 2023"
+    />
+    <meta property="twitter:image" content="#" />
+  </head>
+  <body>
+    <div class="root">
+      <header class="header">
+        <a href="#kezdolap" class="header__logo"
+          ><span>Tamás Mezei</span>Portfolio | HU</a
+        >
+        <i class="bx bx-menu" id="header__menu-icon"></i>
+        <ul class="header__navs">
+          <li class="active"><a href="#kezdolap">Kezdőlap</a></li>
+          <li><a href="#rolam">Rólam</a></li>
+          <li><a href="#projektek">Projektek</a></li>
+          <li><a href="#kapcsolat">Kapcsolat</a></li>
+          <li>
+            <div class="header__theme light">
+              <i class="bx bx-moon"></i>
+              <i class="bx bx-sun"></i>
+            </div>
+          </li>
+          <li><select class="selectpicker" data-width="fit" onchange="window.location.replace(this.value)">
+            <option data-content='English' value="index.html"></option>
+          <option  data-content='Hungary' value="index-hu.html" selected></option>
+        </select></li>
+        </ul>
+      </header>
+      <section class="home" id="kezdolap">
+        <div class="home__left">
+          <h3>Hello!</h3>
+          <h2>Én <span id="home__text"></span> vagyok.</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet
+            unde, delectus odio nemo totam repellendus, modi provident aperiam
+            dolor error ipsam harum, blanditiis fugiat ducimus quas animi
+            consectetur! Nostrum, dolores?
+          </p>
+          <div class="home__socials">
+            <a href="#" class="bx bxl-facebook"></a
+            ><a href="#" class="bx bxl-twitter"></a
+            ><a href="#" class="bx bxl-linkedin"></a>
+            <a href="#" class="bx bxl-github"></a>
+          </div>
+          <a href="#" class="home__btn btn">CV</a>
+        </div>
+        <div class="home__right">
+          <img src="Kép1.jpg" alt="Home image" class="home__image" />
+        </div>
+      </section>
+      <section class="about" id="rolam">
+        <div class="about__left">
+          <h3 class="heading about__heading">Röviden <span>rólam</span></h3>
+        </div>
+        <div class="about__right">
+          <h3 class="heading about__heading">Web <span>Skills</span></h3>
+          <ul id="skill">
+            <li class="skillbar">
+              <span class="bar html"></span
+              ><i class="skill-box bx bxl-html5"></i>
+              <h3>HTML</h3>
+            </li>
+            <li class="skillbar">
+              <span class="bar css"></span><i class="skill-box bx bxl-css3"></i>
+              <h3>CSS</h3>
+            </li>
+            <li class="skillbar">
+              <span class="bar bootstrap"></span
+              ><i class="skill-box bx bxl-bootstrap"></i>
+              <h3>Bootstrap</h3>
+            </li>
+            <li class="skillbar">
+              <span class="bar sass"></span
+              ><i class="skill-box bx bxl-sass"></i>
+              <h3>Sass</h3>
+            </li>
+            <li class="skillbar">
+              <span class="bar javascript"></span
+              ><i class="skill-box bx bxl-javascript"></i>
+              <h3>JavaScript</h3>
+            </li>
+            <li class="skillbar">
+              <span class="bar react"></span
+              ><i class="skill-box bx bxl-react"></i>
+              <h3>React</h3>
+            </li>
+            <li class="skillbar">
+              <span class="bar node"></span
+              ><i class="skill-box bx bxl-nodejs"></i>
+              <h3>NodeJS</h3>
+            </li>
+            <li class="skillbar">
+              <span class="bar wordpress"></span
+              ><i class="skill-box bx bxl-wordpress"></i>
+              <h3>WordPress</h3>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="projects" id="projektek">
+        <h2 class="heading projects__heading">Web <span>Projektek</span></h2>
+        <div class="projects__container">
+          <div class="projects__box projects__first">
+            <img src="assets/img/web/1.png" alt="Project 1" />
+            <div class="projects__stacks">
+              <i class="projects-made bx bxl-html5"></i>
+              <i class="projects-made bx bxl-css3"></i>
+              <i class="projects-made bx bxl-php"></i>
+              <i class='projects-made bx bxl-postgresql' ></i>
+            </div>
+            <div class="projects__layer">
+              <h5>Máltaifoci</h5>
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint
+                omnis odio, iure sequi facilis dolor eum laboriosam nesciunt.
+                Facere nam fuga mollitia accusamus. Voluptas accusantium
+                distinctio, recusandae assumenda harum quia?
+              </p>
+              <a href="https://maltaifoci.hu" target="_blank"><i class="bx bx-link-external"></i></a>
+            </div>
+          </div>
+          <div class="projects__box">
+            <img src="assets/img/web/2.png" alt="Project 2" />
+            <div class="projects__stacks projects__second">
+              <i class="projects-made bx bxl-html5"></i>
+              <i class="projects-made bx bxl-css3"></i>
+              <i class="projects-made bx bxl-php"></i>
+              <i class='projects-made bx bxl-postgresql' ></i>
+            </div>
+            <div class="projects__layer">
+              <h5>Módszertani kártya</h5>
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint
+                omnis odio, iure sequi facilis dolor eum laboriosam nesciunt.
+                Facere nam fuga mollitia accusamus. Voluptas accusantium
+                distinctio, recusandae assumenda harum quia?
+              </p>
+              <a href="https://modszertanikartya.hu" target="_blank"><i class="bx bx-link-external"></i></a>
+            </div>
+          </div>
+          <div class="projects__box">
+            <img src="assets/img/web/3.png" alt="Project 3" />
+            <div class="projects__stacks projects__third">
+              <i class="projects-made bx bxl-html5"></i>
+              <i class="projects-made bx bxl-css3"></i>
+              <i class="projects-made bx bxl-wordpress"></i>
+            </div>
+            <div class="projects__layer">
+              <h5>Dallos Pilates</h5>
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint
+                omnis odio, iure sequi facilis dolor eum laboriosam nesciunt.
+                Facere nam fuga mollitia accusamus. Voluptas accusantium
+                distinctio, recusandae assumenda harum quia?
+              </p>
+              <a href="https://dallospilates.hu" target="_blank"><i class="bx bx-link-external"></i></a>
+            </div>
+          </div>
+          <div class="projects__box">
+            <img src="assets/img/web/4.png" alt="Project 4" />
+            <div class="projects__stacks projects__third">
+              <i class="projects-made bx bxl-html5"></i>
+              <i class="projects-made bx bxl-css3"></i>
+              <i class="projects-made bx bxl-wordpress"></i>
+            </div>
+            <div class="projects__layer">
+              <h5>Jack Pet Food</h5>
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint
+                omnis odio, iure sequi facilis dolor eum laboriosam nesciunt.
+                Facere nam fuga mollitia accusamus. Voluptas accusantium
+                distinctio, recusandae assumenda harum quia?
+              </p>
+              <a href="https://jack-pet-food.com/hu/" target="_blank"><i class="bx bx-link-external"></i></a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="contact" id="kapcsolat">
+        <h2 class="heading contact__heading">Írj <span>Nekem!</span></h2>
+
+        <form action="" class="form">
+          <input type="text" name="name" id="name" placeholder="Teljes név" />
+          <input type="email" name="email" id="email" placeholder="Email cím" />
+          <input type="text" name="subject" id="subject" placeholder="Tárgy" />
+          <textarea
+            name="message"
+            id="message"
+            cols="30"
+            rows="10"
+            placeholder="Üzenet"
+          ></textarea>
+          <input type="submit" id="submit" value="Küldés" />
+        </form>
+      </section>
+
+      <button onclick="goTop()" id="topBtn" class="topBtn" title="Top">
+        <i class="bx bx-up-arrow-alt"></i>
+      </button>
+    </div>
+    <footer class="footer">
+      <div class="footer-text">
+        <p>
+          Copyright &copy; 2023 by <span>Tamás Mezei</span> | Minden jog
+          fenntartva.
+        </p>
+      </div>
+    </footer>
+    <script src="https://unpkg.com/typed.js@2.0.132/dist/typed.umd.js"></script>
+    <script src="assets/js/animation.js"></script>
+    <script src="assets/js/language-hu.js"></script>
+    <script src="assets/js/variables.js"></script>
+    <script src="assets/js/top.js"></script>
+    <script src="assets/js/theme.js"></script>
+    <script src="assets/js/text-hu.js"></script>
+    <script>
+      Top = document.documentElement.scrollTop = 0;
+    </script>
+  </body>
+</html>
+
+<!--
+  TODO: About me, short text
+-->

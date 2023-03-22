@@ -1,0 +1,195 @@
+.header__theme.dark > .bx-moon {
+  display: none;
+}
+
+.dark {
+  .heading {
+    color: $dark-main-color;
+    &::selection {
+      background: black;
+      color: $dark-text;
+    }
+    & > span {
+      color: $dark-text;
+      &::selection {
+        background: black;
+        color: $dark-main-color;
+      }
+    }
+  }
+  transition: 1s ease;
+  background-color: $color-theme-dark;
+  & > .header {
+    background-color: $dark-color;
+    color: $dark-text;
+    & > .header__logo {
+      &::selection {
+        color: $dark-text;
+      }
+    }
+    & > .header__logo > span {
+      color: $dark-text;
+    }
+    & > .header__navs li a::selection {
+      color: black;
+    }
+    & > .header__navs li > a.active {
+      color: $dark-text;
+    }
+    & > .header__navs li a:hover {
+      color: $dark-text;
+    }
+  }
+  & > .home {
+    background: $dark-bg-section-o;
+    & > .home__right {
+      & > .home__image {
+        border: 1px solid $dark-second-color;
+        box-shadow: 0.5rem 0.5rem 0.5rem $dark-second-color;
+      }
+    }
+    & > .home__left {
+      & > h3 {
+        color: $dark-text;
+        &::selection {
+          color: $white;
+          background: black;
+        }
+      }
+      & > h2 {
+        color: $dark-main-color;
+        &::selection {
+          color: $dark-text;
+        }
+      }
+      & > p {
+        color: $dark-main-color;
+        &::selection {
+          color: $dark-text;
+        }
+      }
+      & > .home__btn {
+        background: $dark-main-color;
+        color: $dark-color;
+        box-shadow: 0 0 1rem $dark-main-color;
+        &::selection {
+          color: $dark-text;
+        }
+      }
+      & > .home__socials a {
+        color: $dark-text;
+        border: 0.2rem solid $dark-main-color;
+        &:hover {
+          color: $dark-color;
+          background: $dark-main-color;
+          box-shadow: 0 0 1rem $dark-main-color;
+        }
+      }
+      & > h2 > span {
+        color: $dark-text;
+        &::selection {
+          color: $white;
+          background: black;
+        }
+      }
+    }
+  }
+  & > .about {
+    background: $dark-bg-section;
+    & > .about__left {
+      & > .about__heading {
+        color: $dark-main-color;
+        & > .about__heading-span {
+          color: $dark-text;
+        }
+      }
+      &>span{
+        color: $dark-text;
+        &::selection {
+          background: black;
+          color: $dark-main-color;
+        }
+      }
+      & > p {
+        color: $dark-main-color;
+        &::selection {
+          color: $dark-text;
+          background: black;
+        }
+      }
+    }
+    & > .about__right {
+      & > .heading {
+        color: $dark-main-color;
+      }
+      & > #skill {
+        & > .skillbar {
+          & > h3 {
+            color: $dark-text;
+          }
+        }
+      }
+    }
+  }
+  & > .projects {
+    background: $dark-bg-section-o;
+    & > .heading {
+      color: $dark-main-color;
+    }
+  }
+  & > .contact {
+    background: $dark-bg-section;
+    & > .heading {
+      color: $dark-main-color;
+    }
+    & > .form {
+      & > input {
+        background: $dark-main-color;
+        color: $dark-second-color;
+      }
+      & > textarea {
+        background: $dark-main-color;
+        color: $dark-second-color;
+      }
+    }
+  }
+}
+
+.projects__layer{
+  &>h5::selection, &>p::selection{
+    color: $dark-text !important;
+    background: black !important;
+  }
+}
+footer.dark {
+  transition: 0.5s ease;
+  background: $dark-main-color;
+  color: $dark-second-color;
+  & > .footer-text {
+    & > p > span {
+      color: $dark-color;
+      &::selection{
+        color: $dark-text;
+      }
+    }
+  }
+}
+.form {
+  & input,
+  textarea {
+    &::selection {
+      color: $dark-text;
+      background: black;
+    }
+  }
+  & input[type="submit"] {
+    cursor: pointer;
+    justify-content: center;
+
+    &:hover,
+    :active {
+      font-size: 1.8rem;
+      color: $dark-text;
+    }
+  }
+}
