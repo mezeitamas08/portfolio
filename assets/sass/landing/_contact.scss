@@ -1,4 +1,7 @@
 .contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   &__heading{
     &::selection{
       background: $white-bg-section;
@@ -10,5 +13,28 @@
         color: black;
       }
     }
+  }
+}
+
+.contact__card{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: $white-bg-section;
+  width: 80%;
+  height: 50vh;
+  &-email{
+    display: inline-flex;
+    &>span >a{
+      margin-left: 2rem;
+      color: $white-text;
+    }
+  }
+  
+  &-email,&-phone{
+    font-size: 1.8rem;
+    font-weight: 700;
+    
   }
 }

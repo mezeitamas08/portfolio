@@ -249,50 +249,10 @@
       <section class="contact" id="contact">
         <h2 class="heading contact__heading">Write <span>Me!</span></h2>
 
-        <form
-          action="https://formsubmit.co/mezeitamas1108@gmail.com"
-          name="contact"
-          method="POST"
-          class="form"
-          id="form"
-          data-netlify="true"
-        >
-          <input
-            type="text"
-            name="name"
-            id="name"
-            placeholder="Full Name *"
-            required
-          /><input
-            type="number"
-            name="phone"
-            id="phone"
-            placeholder="Phone number"
-          />
-          <input
-            type="email"
-            name="email"
-            id="email"
-            placeholder="Email address *"
-            required
-          />
-          <input
-            type="text"
-            name="subject"
-            id="subject"
-            placeholder="Subject *"
-            required
-          />
-          <textarea
-            name="message"
-            id="message"
-            cols="30"
-            rows="10"
-            placeholder="Message *"
-            required
-          ></textarea>
-          <input type="submit" id="submit" value="Send me!" />
-        </form>
+        <div class="contact__card">
+          <div class="contact__card-email"><i class='bx bx-envelope'></i><span><a href="mailto:mezeitamas08@gmail.com">mezeitamas08@gmail.com</a></span></div>
+          <div class="contact__card-phone"><i class='bx bx-phone' ></i></div>
+        </div>
       </section>
 
       <button onclick="goTop()" id="topBtn" class="topBtn" title="Top">

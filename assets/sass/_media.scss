@@ -123,7 +123,15 @@
     grid-template-rows: 200px !important;
     grid-template-columns: repeat(1,1fr) !important;
     grid-auto-rows: 200px !important;
-  }
+  }.contact__card{
+    
+    width: 90%;
+  &-email{
+    &>span>a{
+      font-size: 1.5rem;
+    }
+  }}
+
 }
 
 @media(max-width: $media-phone-min){
@@ -163,6 +171,10 @@
   .projects__container{
     grid-template-rows: 0 !important;
     grid-auto-rows: 200px;
+  }.contact__card-email{
+    &>span>a{
+      font-size: 1rem;
+    }
   }
 }
 
@@ -196,5 +208,11 @@
   }
   #skill{
     width: 150px;
+  }
+  .contact__card-email{
+    flex-direction: row;
+    &>span>a{
+      font-size: 1rem;
+    }
   }
 }
