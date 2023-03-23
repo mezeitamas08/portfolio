@@ -249,8 +249,12 @@
           class="form"
           id="form"
           enctype="text/plain"
+          onsubmit="submit"
+          data-netlify="true"
+          data-netlify-honeypot="bot-field"
+          method="POST"
         >
-        <input type="hidden" name="contact_number">
+        <input type="hidden" name="bot-field" />
           <input type="text" name="name" id="name" placeholder="Full Name *" required/><input
           type="number"
           name="phone"
@@ -299,8 +303,6 @@
     <script src="assets/js/top.js"></script>
     <script src="assets/js/theme.js"></script>
     <script src="assets/js/text.js"></script>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-    <script src="assets/js/email.js"></script>
     <script src="assets/js/header.js"></script>
     <script>
       Top = document.documentElement.scrollTop = 0;
