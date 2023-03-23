@@ -463,10 +463,7 @@ html {
   -webkit-animation: wordpress 2s ease-out;
   background-color: #00749c; }
 
-.contact {
-  display: flex;
-  flex-direction: column;
-  align-items: center; }
+.contact { }
   .contact__heading::selection {
     background: #D8D8D8;
     color: #ea5455; }
