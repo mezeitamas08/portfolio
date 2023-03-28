@@ -26,4 +26,4 @@ ScrollReveal({
 })
 
 ScrollReveal().reveal('.home__left, .heading', {origin:'top'})
-ScrollReveal().reveal('.home__right, .form, .projects__box,.about__heading-span', {origin:'bottom'})
+ScrollReveal().reveal('.home__right, .form, .projects__box,.about__heading-span, .projects__years', {origin:'bottom'})

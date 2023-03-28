@@ -140,6 +140,11 @@
     & > .heading {
       color: $dark-main-color;
     }
+    &> .projects__years{
+      &> span{
+        color: $dark-text;
+      }
+    }
   }
   & > .contact {
     background: $dark-bg-section;

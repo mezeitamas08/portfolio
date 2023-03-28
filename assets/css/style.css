@@ -463,13 +463,13 @@ html {
   -webkit-animation: wordpress 2s ease-out;
   background-color: #00749c; }
 
-.contact { }
-  .contact__heading::selection {
-    background: #D8D8D8;
-    color: #ea5455; }
-  .contact__heading > span::selection {
-    background: #D8D8D8;
-    color: black; }
+.contact__heading::selection {
+  background: #D8D8D8;
+  color: #ea5455; }
+
+.contact__heading > span::selection {
+  background: #D8D8D8;
+  color: black; }
 
 .contact__card {
   display: flex;
@@ -732,6 +732,16 @@ html {
   animation: backInLeft;
   animation-duration: 3.5s; }
 
+.projects__years {
+  font-size: 4rem;
+  text-align: center;
+  color: #ea5455;
+  font-weight: 700;
+  margin-bottom: 2rem; }
+
+.projects .projects__year-first, .projects .projects__year-second, .projects .projects__year-third {
+  margin-bottom: 3rem; }
+
 .projects .projects__heading {
   margin-bottom: 4rem; }
   .projects .projects__heading > span::selection {
@@ -744,7 +754,7 @@ html {
 .projects .projects__container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: 300px 300px;
+  grid-auto-rows: 300px 300px;
   align-items: center;
   gap: 2.5rem; }
 
@@ -927,6 +937,8 @@ html {
     background: #646464; }
     .dark > .projects > .heading {
       color: #e7f6f2; }
+    .dark > .projects > .projects__years > span {
+      color: #a5c9ca; }
   .dark > .contact {
     background: #4D4D4D; }
     .dark > .contact > .heading {
@@ -1025,6 +1037,8 @@ footer.dark {
       width: 70%; }
       .about__left > p {
         font-size: 1.8rem; }
+  .projects {
+    padding: 10rem 2rem; }
   .projects__container {
     grid-template-columns: repeat(1, 1fr) !important; } }
 
@@ -1047,9 +1061,8 @@ footer.dark {
     .about__right, .about__left {
       width: 80%; }
   .projects__container {
-    grid-template-rows: 200px !important;
-    grid-template-columns: repeat(1, 1fr) !important;
-    grid-auto-rows: 200px !important; }
+    grid-auto-rows: 300px 300px;
+    grid-template-columns: repeat(1, 1fr) !important; }
   .contact__card {
     width: 90%; }
     .contact__card-email > span > a {
@@ -1073,9 +1086,6 @@ footer.dark {
     width: 100%; }
   #skill {
     width: 200px; }
-  .projects__container {
-    grid-template-rows: 0 !important;
-    grid-auto-rows: 200px; }
   .contact__card-email > span > a {
     font-size: 1rem; } }
 
@@ -1102,4 +1112,9 @@ footer.dark {
   .contact__card-email {
     flex-direction: row; }
     .contact__card-email > span > a {
-      font-size: 1rem; } }
+      font-size: 1rem; }
+  .projects {
+    padding: 10rem 0; }
+    .projects > .projects__container {
+      grid-auto-rows: 200px;
+      grid-template-rows: 200px !important; } }

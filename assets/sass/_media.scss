@@ -88,6 +88,9 @@
       }
     }
   }
+  .projects{
+    padding: 10rem 2rem;
+  }
   .projects__container {
     grid-template-columns: repeat(1, 1fr) !important;
   }
@@ -120,9 +123,8 @@
     }
   }
   .projects__container{
-    grid-template-rows: 200px !important;
+    grid-auto-rows: 300px 300px;
     grid-template-columns: repeat(1,1fr) !important;
-    grid-auto-rows: 200px !important;
   }.contact__card{
     
     width: 90%;
@@ -167,10 +169,6 @@
   }
   #skill{
     width: 200px;
-  }
-  .projects__container{
-    grid-template-rows: 0 !important;
-    grid-auto-rows: 200px;
   }.contact__card-email{
     &>span>a{
       font-size: 1rem;
@@ -213,6 +211,13 @@
     flex-direction: row;
     &>span>a{
       font-size: 1rem;
+    }
+  }
+  .projects{
+    padding: 10rem 0;
+    &> .projects__container{
+      grid-auto-rows: 200px;
+      grid-template-rows: 200px !important;
     }
   }
 }

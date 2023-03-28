@@ -1,4 +1,14 @@
 .projects {
+  &__years{
+    font-size: 4rem;
+    text-align: center;
+    color: $white-text;
+    font-weight: 700;
+    margin-bottom: 2rem;
+  }
+  & .projects__year-first, .projects__year-second, .projects__year-third{
+    margin-bottom: 3rem;
+  }
   & .projects__heading {
     margin-bottom: 4rem;
     & > span::selection {
@@ -13,7 +23,7 @@
   & .projects__container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 300px 300px;
+    grid-auto-rows: 300px 300px;
     align-items: center;
     gap: 2.5rem;
   }
