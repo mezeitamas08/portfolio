@@ -766,7 +766,8 @@ html {
   display: flex;
   width: 100%;
   height: 100%; }
-  .projects .projects__box:hover img {
+  .projects .projects__box:hover img, .projects .projects__box:hover i {
+    transform: 1s ease;
     transform: scale(1.1); }
   .projects .projects__box:hover .projects__layer {
     transform: translateY(0); }
@@ -819,6 +820,13 @@ html {
   align-items: center;
   flex-direction: row;
   z-index: 99; }
+  .projects .projects__stacks > img {
+    width: 34px;
+    height: 34px;
+    border: 0.2rem solid black;
+    border-radius: 50%;
+    margin: 0 0.5rem;
+    z-index: 100; }
 
 .projects .projects-made {
   border: 0.2rem solid black;
