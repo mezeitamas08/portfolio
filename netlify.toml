@@ -1,0 +1,5 @@
+[[redirects]]
+  from="/*"
+  to="https://mezeitamasdev.hu"
+  status=301
+  force=true
