@@ -1081,6 +1081,14 @@ html {
   background: #fff;
   color: #0064a5;
 }
+.projects .projects-made.bxl-tailwind-css {
+  background: #fff;
+  color: #31C4F3;
+}
+.projects .projects-made.bxl-react {
+  background: #fff;
+  color: #31C4F3;
+}
 .projects .projects-made.bxl-wordpress {
   background: #00749c;
   color: #fff;

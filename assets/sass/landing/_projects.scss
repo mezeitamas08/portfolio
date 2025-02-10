@@ -130,6 +130,14 @@
       background: $white;
       color: $color-postgre-logo;
     }
+    &.bxl-tailwind-css {
+      background: $color-tailwind;
+      color: $white;
+    }
+    &.bxl-react {
+      background: $color-react;
+      color: $white;
+    }
     &.bxl-wordpress {
       background: $color-wordpress;
       color: $white;
